@@ -1,0 +1,131 @@
+
+* {
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+  
+}
+
+
+.abs-center{
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body {
+      display: flex;
+    min-height: 100vh;
+    padding: 0; margin: 0;
+  }
+  
+ 
+  #pgside {
+    width: 500px;
+    transition: width 0.2s;
+    background: #283039;
+  }
+  
+  
+  #pgside #pguser {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+  }
+  #pgside #pguser img {
+    width: 80px;
+    margin-right: 5px;
+    border-radius: 50% 50% 50% 50%;
+  }
+  
+
+  #pgside, #pgside a { color: #fff; }
+  #pgside a {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #pgside a:hover { background: #4022ab; }
+  
+  
+  
+  #pgside i.ico, #pgside i.txt { font-style: normal; }
+  #pgside i.ico {
+    font-size: 1.7em;
+    margin-right: 1px;
+  }
+  
+  
+  
+  @media screen and (max-width:768px) {
+    #pgside { width: 70px; }
+    #pgside #pguser { justify-content: center; }
+    #pgside a {
+      text-align: center;
+      padding: 20px 0;
+
+    }
+
+    #pgside #pguser img {width: 65px;}
+
+    #pgside i.ico {
+      font-size: 1.5em;
+      margin-right: 0;
+    }
+    #pgside i.txt { display:none; }
+  }
+  
+  
+  #pgmain {
+    flex-grow: 1;
+    padding: 20px;
+    background: #f2f2f2;
+    
+  }
+  
+  #section1{
+    width: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center; 
+} 
+#section2{
+  width: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center; 
+   
+}
+#section3{
+  width: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center; 
+   
+}
+#section4{
+  width: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center; 
+   
+}
+#section5{
+  width: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center; 
+   
+}
+
+#section6{
+  width: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center; 
+   
+}
+

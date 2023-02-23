@@ -1,0 +1,15 @@
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.capsule{
+    width: 350px;
+    height: 200px;
+}
+.great{
+    width: 100px;
+    height: auto;
+
+}
