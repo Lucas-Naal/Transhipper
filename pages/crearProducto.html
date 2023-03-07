@@ -102,6 +102,11 @@
                      <input name="nameProducto" id="name" type="text" class="form-control" required>
                      
                    </div>
+                   <div class="mb-3">
+                    <label for="nameProducto" class="form-label">Ctegory relleno</label>
+                    <input name="nameProducto" id="category" type="text" class="form-control" required>
+                    
+                  </div>
                    
                    <div class="mb-3">
                     <label class="form-label"> Lista de tipos</label>
@@ -112,8 +117,16 @@
                   </div>
 
                    <div class="mb-3">
-                    <label for="formFile" class="form-label">Imagen</label>
-                    <input  type="file" class="" id="upload_widget" > Subir Imagen
+                    
+                   
+                    <input  type="file" class="form-select mb-2" id="upload_widget" > 
+                    <p class="lead">Vista Previa</p>
+
+                   
+                    <div class="card" style="width: 18rem;">
+                      <img  src="" id="image">
+                      
+                    </div>
                   </div>
                   
                   
@@ -137,16 +150,22 @@
 
 <script type="text/javascript">  
 
-const APIKEY = '549645598118325'
+const imageCloud = document.querySelector('#image')
+
+
+
+
 var myWidget = cloudinary.createUploadWidget({
   
-  cloudName: 'my_cloud_name', 
-  uploadPreset: 'my_preset',
+  cloudName: 'dc4mgv156', 
+  uploadPreset: 'UP_Transhipper',
   
 },
    (error, result) => { 
     if (!error && result && result.event === "success") { 
       console.log('Done! Here is the image info: ', result.info); 
+       imageCloud.src = result.info.secure_url
+        
     }
   }
 )
@@ -154,6 +173,8 @@ var myWidget = cloudinary.createUploadWidget({
 document.getElementById("upload_widget").addEventListener("click", function(){
     myWidget.open();
   }, false);
+
+
 </script>
 
 

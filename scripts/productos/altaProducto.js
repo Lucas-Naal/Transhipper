@@ -4,11 +4,13 @@ const origin = 'http://www.transhipper.somee.com/api/Products'
 
 appAlta.addEventListener('submit', (event)=>{
   event.preventDefault(producto);
+
   const Product={
+
     name:document.querySelector("#name").value,
-    
-    image:document.querySelector("#image").value,
-  
+    categoryId:document.querySelector("#category").value,
+    image:document.querySelector("#image").src,
+
   }
 
 
@@ -22,6 +24,7 @@ appAlta.addEventListener('submit', (event)=>{
     body:JSON.stringify(Product)
   }).then(data => {
     console.log(data)
+    console.log(Product)
   }
   ).then(a => {
     
