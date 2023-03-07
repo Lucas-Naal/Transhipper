@@ -14,10 +14,8 @@ async function buscar(){
           .then(datos => {
             if(datos.id == acc){
               document.querySelector('#idproducto').value=datos.id,
-              document.querySelector('#name').value=datos.name,
-              document.querySelector('#image').value=datos.image
-              
-          
+              document.querySelector('#name').value=datos.name
+             
             }else{
               alert("EL ID ES INCORRECTO")
             }

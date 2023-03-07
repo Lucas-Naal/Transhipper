@@ -19,7 +19,7 @@ function buscar(){
                 document.querySelector('#shipID').value=datos.envioId
                 document.querySelector('#kill').value=datos.typeReport,
                 document.querySelector('#kindReport').value=datos.description
-                //document.querySelector('#status').value=datos.status                
+                              
             
               }else{
                 alert("EL ID ES INCORRECTO")
@@ -32,11 +32,10 @@ function buscar(){
        function changeStatus() {
 
 
-            const productoid =document.querySelector('#buscador').value;
-            const origin = 'http://www.transhipper.somee.com/api/envios/reports/' + productoid
+            const reportId =document.querySelector('#buscador').value;
+            const origin = 'http://www.transhipper.somee.com/api/envios/reports/' + reportId
             
-            const producto={
-    
+            const dataReport = {
               envioId:document.querySelector('#shipID').value,
               typeReport:document.querySelector('#kill').value,
               description:document.querySelector('#kindReport').value,
@@ -45,7 +44,7 @@ function buscar(){
               
             }
         
-            console.log(producto)
+            console.log(dataReport)
             console.log(origin);
         
       fetch(origin,{
@@ -57,16 +56,18 @@ function buscar(){
                 'Content-Type': 'application/json',
         
                   },
-                  body: JSON.stringify(producto)
-            }).then(res => res.text()).then(a => {
+                  body: JSON.stringify(dataReport)
+            }).then(res => res.text(
+      
+              
+      
+                       )).then(a => {
         
-            
+            window.location.reload()
             document.querySelector('#kill').value='',
             document.querySelector('#kindReport').value='',
-            document.querySelector('#floatingSelect').value=''      
+            document.querySelector('#floatingSelect').value=''  
 
-              alert('Datos actualizados')
-          
           
             })
           }

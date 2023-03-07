@@ -1,6 +1,6 @@
-
+const pagination = document.querySelector('#pagination')
 const shimpmentsdata= document.querySelector('#contenidoshipments');
-const urlShipments='http://www.transhipper.somee.com/api/Envios' 
+const urlShipments='http://www.transhipper.somee.com/api/Envios/pagination?PageNumber=1&PageSize=15' 
 
 function Envios(){
   fetch(urlShipments,{
@@ -31,6 +31,7 @@ function createTableEnvios(datos){
   
     `
   }
+
 }
 
 Envios();

@@ -8,7 +8,7 @@ async function updateproducto()  {
 
       name:document.querySelector('#nombreproducto').value,
       type:document.querySelector('#kind').value,
-      imageUrl:document.querySelector('#imageurl').value,
+      image:document.querySelector('#imageurl').value,
       
     }
 

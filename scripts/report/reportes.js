@@ -45,7 +45,7 @@ function createTableReport(datos){
        <div class="modal-body">
          <form id="moma">
           <div class="mb-3">
-           <label class="form-label">Buscador</label>
+           <label class="form-label">Buscar por Número de reporte</label>
            <input  type="text" class="form-control" id="buscador">
            <button  onclick="buscar()" type="button" class="btn btn-primary mt-2">Buscar</button>
           </div>
@@ -80,7 +80,7 @@ function createTableReport(datos){
          </form>
        </div>
        <div class="modal-footer">
-         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
          <button  onclick="changeStatus()" type="submit" class="btn btn-primary">Actualizar Estado</button>
        </div>
      </div>

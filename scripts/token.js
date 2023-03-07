@@ -27,7 +27,7 @@ form.addEventListener('submit', (event) => {
         
         if (localStorage.getItem("token") != null) {
            
-            setTimeout(function () { window.location.href = "menuAdmin.html"; }, 1000);
+            setTimeout(function () { window.location.href = "menuAdmin.html"; }, 100);
         } else {
             localStorage.removeItem('token');
             alert('el login no es correcto');
