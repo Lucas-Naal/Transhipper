@@ -1,5 +1,5 @@
 const reportdata= document.querySelector('#reports');
-const urlReport='http://www.transhipper.somee.com/api/envios/reports' 
+const urlReport='http://www.transhipper.somee.com/api/envios/reports/pagination?PageNumber=1&PageSize=10' 
 
 function Report(){
   fetch(urlReport,{
