@@ -1,7 +1,7 @@
 let admins=[]
 const app = document.querySelector('#contain');
 
-const origin = 'http://www.transhipper.somee.com/api/Users' 
+const origin = 'http://www.transhipper.somee.com/api/users/pagination?PageNumber=1&PageSize=15' 
 
  function watchAdmin(){
               
